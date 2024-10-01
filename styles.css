@@ -68,3 +68,77 @@ section {
     margin: 0 auto 20px;
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table, th, td {
+    border: 1px solid #0288d1;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    background-color: #81d4fa;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label, form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #80deea;
+    box-shadow: 0 0 5px rgba(128, 222, 234, 0.5);
+}
+
+button {
+    padding: 10px;
+    background-color: #81d4fa;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #4fc3f7;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    background-color: #0288d1;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .profile-img {
+        max-width: 100px;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
